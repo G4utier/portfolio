@@ -27,6 +27,8 @@ import figmaLogo from '../assets/logos/Figma-logo.svg';
 
 <!doctype html>
 <html lang="en" data-theme="dark" class="dark">
+  <meta name="author" content="Gautier Einsweiler">
+  <meta name="keywords" content="Gautier Einsweiler, développeur, portfolio, web, fullstack, Epitech, Canada, Québec">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <!-- JSON-LD: Organization -->
@@ -37,8 +39,7 @@ import figmaLogo from '../assets/logos/Figma-logo.svg';
       url: new URL('/', Astro.site).toString(),
       logo: new URL('/favicon.svg', Astro.site).toString(),
       sameAs: [
-        'https://x.com/guihubie',
-        'https://www.linkedin.com/in/guilherme-hubie/',
+        'https://www.linkedin.com/in/gautier-einsweiler/',
       ],
     })} />
 	</head>
@@ -56,11 +57,11 @@ import figmaLogo from '../assets/logos/Figma-logo.svg';
 
     <section class="py-6">
       <ArrowSeparator />
-      <SkillsSection title="Skills & Tools" skills={skills} />   
+      <SkillsSection title="Compétences & outils" skills={skills} />   
       <ArrowSeparator />
-      <WorkExperience title="Work Experience" items={work} />
+      <WorkExperience title="Experiences professionnelle" items={work} />
       <ArrowSeparator />
-      <Studies title="Studies" items={studies} />
+      <Studies title="Etudes" items={studies} />
       <GlowLineSeparator />
     </section>
 		</main>
