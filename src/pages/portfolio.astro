@@ -5,8 +5,8 @@ import Footer from "../components/sections/Footer.astro";
 import Projects from "../components/sections/Projects.astro";
 import HeroSection from "../components/sections/HeroSection.astro";
 import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astro";
+import ComingSoon from "@/components/sections/ComingSoon.astro";
 ---
-
 
 <html lang="en" data-theme="dark" class="dark">
   <head>
@@ -15,12 +15,11 @@ import GlowLineSeparator from "../components/ui/separator/GlowLineSeparator.astr
   <body>
     <Header />
     <main>
-      <HeroSection title="Selected Projects" subtitle="A few apps, templates, and playbooks I built or maintain." />
-      <Projects />
+      <HeroSection title="Mes projets" subtitle="" />
+      <!-- <Projects /> -->
+      <ComingSoon />
       <GlowLineSeparator />
     </main>
     <Footer />
   </body>
 </html>
-
-

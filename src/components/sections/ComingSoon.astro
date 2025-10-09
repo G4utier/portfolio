@@ -1,0 +1,33 @@
+---
+interface Props {
+  title?: string;
+  message?: string;
+}
+
+const { title = "Page en construction 🚧", message = "Reviens bientôt, du contenu arrive très vite !" } = Astro.props as Props;
+---
+
+<section class="w-full py-20 flex flex-col items-center justify-center text-center">
+  <div class="max-w-2xl px-6">
+    <h2 class="text-4xl font-semibold mb-4 text-foreground">{title}</h2>
+    <p class="text-lg text-[color:var(--color-text-muted)] mb-8">{message}</p>
+
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  fill="none"
+  viewBox="0 0 24 24"
+  stroke-width="1.5"
+  stroke="currentColor"
+  class="w-24 h-24 mx-auto opacity-80 text-[var(--accent)] animate-pulse"
+>
+  <path
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+  />
+</svg>
+
+
+    </div>
+  </div>
+</section>

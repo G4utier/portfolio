@@ -1,0 +1,36 @@
+---
+// Aucun import nécessaire si tes SVG sont dans /public/assets
+---
+<style>
+  .airplane {
+    position: fixed;
+    width: 50px;
+    height: auto;
+    transition: transform 0.1s linear;
+    z-index: 10;
+    pointer-events: none;
+  }
+</style>
+
+<!-- Avions -->
+<img src="src/assets/icons/airplane.svg" class="airplane" id="plane1" />
+<img src="src/assets/icons/airplane.svg" class="airplane" id="plane2" />
+<img src="src/assets/icons/airplane.svg" class="airplane" id="plane3" />
+
+<script is:inline>
+  const planes = [
+    { el: document.getElementById('plane1'), speed: 0.3, x: -100, y: 100 },
+    { el: document.getElementById('plane2'), speed: 0.5, x: -200, y: 250 },
+    { el: document.getElementById('plane3'), speed: 0.4, x: -150, y: 400 }
+  ];
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+
+    planes.forEach(plane => {
+      plane.x = scrollY * plane.speed - 100;
+      const yOffset = Math.sin(scrollY * 0.01 + plane.y) * 20;
+      plane.el.style.transform = `translate(${plane.x}px, ${plane.y + yOffset}px) rotate(${scrollY * 0.05}deg)`;
+    });
+  });
+</script>

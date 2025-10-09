@@ -1,10 +1,10 @@
 ---
+import Airplanes from '@/components/ui/airplanes.astro/Airplanes.astro';
 import Layout from '../layouts/BlogPost.astro';
 import GlowLineSeparator from '@/components/ui/separator/GlowLineSeparator.astro';
 const pageTitle = 'À propos de moi';
 const pageDescription = 'Découvrez mon parcours, mes projets et mes passions.'; 
----
-
+--- 
 <Layout title={pageTitle} description={pageDescription} pubDate={new Date()} showHeader={false}>
   <p>
     Salut ! Je suis étudiant en informatique passionné par le développement logiciel et la création de systèmes robustes et performants.
