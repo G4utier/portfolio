@@ -12,7 +12,7 @@ export const workIcons = {
 export const work = [
   {
   title: "Stage en développement web/support IT",
-      date: "Apr 2025 - Jul 2025",
+      date: "Avr 2025 - Juil 2025",
     company: "Domaine Thermal de Mondorf",
     region: "Mondorf-lès-Bains, Luxembourg",
     description:
@@ -27,7 +27,7 @@ export const work = [
     ]},
     {
       title: "Assistant Pédagogique",
-      date: "Feb 2024 - Feb 2025",
+      date: "Fev 2024 - Fev 2025",
       company: "Epitech",
       region: "Nancy, France",
       description:
@@ -39,7 +39,7 @@ export const work = [
       ]},
       {
         title: "Stage en développement logiciel",
-    date: "Jul 2023 - Dec 2023",
+    date: "Juil 2023 - Dec 2023",
     
       company: "Chemins de Fer Luxembourgeois (CFL)",
       region: "Luxembourg, Luxembourg",
